@@ -222,7 +222,7 @@ struct AnalogClockFrameView: View {
         let startOfDay = Calendar.current.startOfDay(for: date)
         let elapsedSeconds = date.timeIntervalSince(startOfDay)
         let secondsPerDay: TimeInterval = 24 * 60 * 60
-        let rotationsPerDay = 100.0
+        let rotationsPerDay = 1000.0
 
         return .degrees(elapsedSeconds / secondsPerDay * rotationsPerDay * 360)
     }
